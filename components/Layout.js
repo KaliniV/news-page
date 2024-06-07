@@ -8,13 +8,13 @@ import Footer from './Footer'
 export default function Layout({ children }) {
   return (
     <>
-    <Head>
-      <link rel="shortcut icon" href="/images/ico.ico" />
-      <title>News</title>
-    </Head>
-    <Navbar />
-    <main className="main-container">{children}</main>
-    <Footer />
-  </>
+      <Head>
+        <link rel="shortcut icon" href="/images/ico.ico" />
+        <title>News</title>
+      </Head>
+      <Navbar />
+      <main className="main-container">{children}</main>
+      <Footer />
+    </>
   )
 }

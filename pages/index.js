@@ -13,29 +13,28 @@ export async function getStaticProps() {
 
   return {
     props: {
-      noticias: data.articles,
+      allnew: data.articles,
     },
   };
 }
 
-export default function Home({ noticias }) {
-  return ( 
-  <>
+export default function Home({ allnew }) {
+  return (
+    <>
       <div className={styles.title_container}>
-      <h1 className={styles.title}>
-        NEWS<span > of the day</span>
+        <h1 className={styles.title}>
+          NEWS<span > of the day</span>
         </h1>
- 
-    </div>
-   
+
+      </div>
+
       <div className={styles.new_container}>
-      {noticias.map((noticia)=>(
-      <Card key={noticia.id} noticia={noticia}/>
-      
-     ) )}
-    </div>
-    
-    
-  </>
+        {allnew.map((news, index) => (
+          <Card key={index} news={news} />
+        ))}
+      </div>
+
+
+    </>
   )
 }

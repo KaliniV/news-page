@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles  from '../styles/Navbar.module.css'
+import styles from '../styles/Navbar.module.css'
 import Image from 'next/image'
 export default function Navbar() {
   return (
@@ -11,19 +11,19 @@ export default function Navbar() {
           height="30"
           alt="Logo-not"
         />
-      <h1>Noticias</h1>
+        <h1>News</h1>
       </div>
       <ul className={styles.link_items}>
         <li>
           <Link href='/'>Home</Link>
         </li>
         <li>
-          <Link href='/about'>Sobre</Link>
+          <Link href='/about'>About</Link>
         </li>
-        
+
       </ul>
     </nav>
-    
-  
+
+
   )
 }
