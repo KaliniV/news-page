@@ -2,6 +2,10 @@
 
 Este é um projeto de um site de notícias desenvolvido com Next.js, utilizando a API NewAPI. O projeto inclui vários componentes para exibir e gerenciar notícias de maneira eficaz.
 
+Para inicializar o projeto rode no terminal `npm run dev`.
+
+Api utilizada: https://newsapi.org/
+
 ## Funcionalidades
 
 - **Listagem de Notícias**: A página inicial exibe uma lista de notícias obtidas da API NewsAPI.
